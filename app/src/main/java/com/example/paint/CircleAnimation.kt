@@ -1,6 +1,7 @@
 
 import android.view.animation.Animation
 import android.view.animation.Transformation
+import com.example.paint.CircleView
 
 
 class CircleAnimation(circleView: CircleView, startRadius: Float, endRadius: Float) :

@@ -1,9 +1,16 @@
+package com.example.paint
+
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.Path
 import android.util.AttributeSet
+import android.view.MotionEvent
+import android.view.SurfaceHolder
+import android.view.SurfaceView
 import android.view.View
+import java.util.*
 
 
 class CircleView : View {
@@ -26,8 +33,14 @@ class CircleView : View {
         init()
     }
 
+
     private fun init() {
         paint = Paint(Paint.ANTI_ALIAS_FLAG)
+
+//        paint!!.isAntiAlias = true;
+//        paint!!.strokeWidth = 2F;
+//        paint!!.color = -7829368;
+//        paint!!.style = Paint.Style.STROKE;
         paint!!.color = Color.RED
         radius = 50f
     }
@@ -43,4 +56,7 @@ class CircleView : View {
         this.radius = radius
         invalidate()
     }
+
+
+
 }
